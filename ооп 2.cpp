@@ -8,6 +8,8 @@ public:
     Point() : x(0), y(0) {
         cout << "Point()\n";
     }
-   
+    Point() : x(0), y(0) {
+        cout << "Point()\n";
+    }
     
 };
