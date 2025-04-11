@@ -86,7 +86,9 @@ int main() {
     Circle c2(10, 20, 5.5);
     c2.print();
     Point* p = new Point(5, 7);
-
     delete p;
+
+    Rectangle r(Point(0, 0), Point(5, 5));
+
     return 0;
 }
