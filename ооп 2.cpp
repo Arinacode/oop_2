@@ -24,5 +24,7 @@ public:
     void print() const {
         cout << "(" << x << ", " << y << ")\n";
     }
-    
+    ~Point() {
+        cout << "~Point() " << "(" << x << ", " << y << ")\n";
+    }
 };
