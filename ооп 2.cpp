@@ -17,4 +17,8 @@ public:
     Point(const Point& p) : x(p.x), y(p.y) {
         cout << "Point(" << x << ", " << y << ")\n";
     }
+    void move(int dx, int dy) {
+        x += dx;
+        y += dy;
+    }
 };
