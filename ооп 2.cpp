@@ -14,4 +14,7 @@ public:
     Point(int xVal, int yVal) : x(xVal), y(yVal) {
         cout << "Point(" << x << ", " << y << ")\n";
     }
+    Point(const Point& p) : x(p.x), y(p.y) {
+        cout << "Point(" << x << ", " << y << ")\n";
+    }
 };
