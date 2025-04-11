@@ -24,4 +24,5 @@ public:
     void print() const {
         cout << "(" << x << ", " << y << ")\n";
     }
+    
 };
