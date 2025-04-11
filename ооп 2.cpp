@@ -59,3 +59,12 @@ public:
         cout << "~Circle() " << "radius = " << radius << endl;
     }
 };
+class Rectangle {
+public:
+    Point topLeft;
+    Point bottomRight;
+
+    Rectangle(Point p1, Point p2) : topLeft(p1), bottomRight(p2) {
+        cout << "Прямоугольник создан с верхним левым углом в (" << topLeft.x << ", " << topLeft.y << ") и нижним правым углом в (" << bottomRight.x << ", " << bottomRight.y << ")\n";
+    }
+};
