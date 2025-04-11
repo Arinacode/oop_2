@@ -21,4 +21,7 @@ public:
         x += dx;
         y += dy;
     }
+    void print() const {
+        cout << "(" << x << ", " << y << ")\n";
+    }
 };
