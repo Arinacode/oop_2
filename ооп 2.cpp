@@ -68,3 +68,23 @@ public:
         cout << "Прямоугольник создан с верхним левым углом в (" << topLeft.x << ", " << topLeft.y << ") и нижним правым углом в (" << bottomRight.x << ", " << bottomRight.y << ")\n";
     }
 };
+int main() {
+    Point p1;
+    p1.move(5, 7);
+    p1.print();
+
+    Point p2(3, 4);
+    p2.print();
+
+    Point p3 = p2;
+    p3.print();
+
+    Circle c1;
+    c1.resize(1.5);
+    c1.print();
+
+    Circle c2(10, 20, 5.5);
+    c2.print();
+
+    return 0;
+}
