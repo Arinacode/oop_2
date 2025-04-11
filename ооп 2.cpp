@@ -27,4 +27,35 @@ public:
     ~Point() {
         cout << "~Point() " << "(" << x << ", " << y << ")\n";
     }
+
+};
+class Circle : public Point {
+public:
+    double radius;
+
+    // Конструктор по умолчанию
+    Circle() : Point(), radius(1.0) {
+        cout << "Circle()\n";
+    }
+
+    // Конструктор с параметрами
+    Circle(int x, int y, double r) : Point(x, y), radius(r) {
+        cout << "Circle(" << x << ", " << y << ", " << radius << ")\n";
+    }
+
+    // Метод изменения радиуса
+    void resize(double factor) {
+        radius *= factor;
+    }
+
+    // Метод вывода круга
+    void print() const {
+        Point::print();
+        cout << "radius = " << radius << endl;
+    }
+
+    // Деструктор
+    ~Circle() {
+        cout << "~Circle() " << "radius = " << radius << endl;
+    }
 };
